@@ -12,7 +12,7 @@ class Conexion {
                         $entorno['DB_HOST'], $entorno['USER_DB'], $entorno['PASS_DB'],
                         array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES  \'UTF8\''));
             } else {
-                $this->_conexion = new PDO("mysql:dbname=" . $entorno['DB_DB'] . ";host=" .
+                $this->_conexion = new PDO("mysql:dbname=" . $entorno['DB_DBPROD'] . ";host=" .
                         $entorno['DB_HOST'], $entorno['USER_DB_PROD'], $entorno['PASS_DB_PROD'],
                         array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES  \'UTF8\''));
             }
