@@ -6,6 +6,7 @@
  *  la función es la misma que el anterior por haciendo uso de los filter_input y filter_input_array
  *  para cargar los datos de las variables donde corresponden 
  */
+header("Acces-Control-Allow-Origin:*");
 $arrayParamGet = filter_input_array(INPUT_GET); //creo un Array con los datos q filtro desde el HTML que vienen con el metodo GET
 $arrayParamPost = filter_input_array(INPUT_POST); //creo un Array con los datos q filtro desde el HTML que vienen con el metodo GET
 $datosCampos = filter_input_array(INPUT_GET);//descomentar para realizar pruebas harcodeadas a la BD
